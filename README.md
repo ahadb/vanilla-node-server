@@ -1,5 +1,4 @@
 # Vanilla Node Server   
-
 Bootstrap for a vanilla node.js server without Express so you can see how it works. 
 
 ## What this Repo Has to Offer
@@ -8,7 +7,8 @@ overlooked by developers as they continue to npm, npm away.
 
 * Everything in one file without modularization
 * Vanilla Node Server with `http` and `https` support
-* As vanilla JS as possible, some ES6 syntax for arrow fn
+* Standard err/callback pattern, no promises or `async`, `await`
+* As vanilla JS as possible, only ES6 syntax for arrow functions and template literals
 * Support for http & https
 * Config for NODE_ENV supporting dev, prod, staging
 * Basic Routing & Handling

@@ -5,7 +5,11 @@ const fs = require('fs')
 const StringDecoder = require('string_decoder').StringDecoder
 const config = require('./utils/config')
 
-// server-centric stuff
+const handlers = {}
+const router = {
+  'stats': handlers.stats
+}
+
 const httpServer = http.createServer((request, response) => {
   universalServer(request, response)
 })
@@ -67,16 +71,10 @@ const universalServer = (request, response) => {
   })
 }
 
-const handlers = {}
-
 handlers.stats = (data, cb) => {
   cb(200, {'status': 'success'})
 }
 
 handlers.notFound = (data, cb) => {
   cb(404)
-}
-
-const router = {
-  'stats': handlers.stats
 }
