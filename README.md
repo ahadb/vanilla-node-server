@@ -1,10 +1,7 @@
 # Vanilla Node Server   
-Bootstrap for a vanilla node.js server without Express so you can see how it works. 
+Bootstrap for a vanilla Node.js server without Express so you can see how it works. Often it's tough weeding throug the many tutorials and blog posts out there for Express, Hapi, etc IMO, it's always better to learn the fundamentals of Node.js (...they are baked in!) which is often overlooked by developers and then move onto the libraries.
 
 ## What this Repo Has to Offer
-Too many tutorials out there for Express, Hapi, etc, it's always better to learn the fundamentals of Node.js which is often
-overlooked by developers as they continue to npm, npm away.
-
 * Everything in one file without modularization
 * Vanilla Node Server with `http` and `https` support
 * Standard err/callback pattern, no promises or `async`, `await`
